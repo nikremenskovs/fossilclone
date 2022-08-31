@@ -1,0 +1,527 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+.sliding-banner {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    height: 2rem;
+    z-index: 1;
+}
+
+.eshop {
+    display: none;
+}
+
+
+.main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    margin-top: 2rem;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    z-index: 1;
+}
+
+.main-header__desktop-nav {
+    display: none;
+}
+
+.main-header__nav {
+    margin-right: 0.4rem;
+}
+
+.main-header__nav a {
+    margin: 0 0.8rem;
+    text-decoration: none;
+}
+
+.womens-pop,
+.mens-pop,
+.watches-pop
+.smartwatches-pop,
+.bags-pop,
+.wallets-pop,
+.jewelry-pop,
+.sale-pop,
+.featured-pop {
+    display: none;
+}
+
+/* .wallets-pop {
+    display: flex;
+} */
+
+.copyright {
+    background: #efefef;
+    padding: 1rem;
+    text-align: center;
+    margin: 0.5rem auto;
+    line-height: 2;
+}
+
+.copyright__link {
+    list-style: none;
+    display: inline-block;
+}
+
+.copyright__link a {
+    text-decoration: none;
+    color: #807a7a;
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+}
+
+.footer-container {
+    margin-top: 5rem;
+    border-top: 1px solid #ccc;
+
+}
+
+.stay-connected__link {
+    display: inline-block;
+}
+
+footer {
+    margin: 1rem;
+}
+
+label, input {
+    display: block;
+}
+
+.stay-connected__signup label {
+    margin-bottom: 0.7rem;
+}
+
+.stay-connected__signup input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    background: url("https://www.fossil.com/on/demandware.static/Sites-fossil-in-Site/-/default/dw472af46c/images/svg-icons/right-arrow-footer.svg") no-repeat;
+    background-position: right;
+    margin: 1rem 0;
+    height: 1.8rem;
+}
+
+.stay-connected__links {
+    padding-left: 0;
+    translate: -1rem;
+    list-style: none;
+}
+
+.discover__links,
+.customer-care__links,
+.contact-us__links {
+    padding-left: 0;
+    list-style: none;
+}
+
+.stay-connected__link {
+    padding: 1rem;
+}
+
+.discover__link,
+.customer-care__link,
+.contact-us__link {
+    margin-bottom: 1.5rem;
+}
+
+.discover__link a,
+.customer-care__link a,
+.contact-us__link a {
+    text-decoration: none;
+    color: black;
+}
+
+footer h3 {
+    margin: 0.25rem 0;
+}
+
+footer h3,
+footer li {
+    font-size: 0.875rem;
+}
+
+.feedback__link {
+    font-weight: bold;
+}
+
+.stay-connected__title {
+    margin: 0.875rem 0;
+}
+
+.stay-connected,
+.discover,
+.customer-care {
+    border-bottom: 1px solid #ccc;
+}
+
+
+@media (min-width: 48rem) {    
+    .desktop-nav__list:hover,
+    .desktop-nav__list:active {
+        border-bottom: 2px solid black;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .stay-connected,
+    .discover,
+    .customer-care {
+        width: 30%;
+        border: none;
+    }
+
+    .contact-us {
+        position: relative;
+        margin-left: 68.5%;
+    }
+
+    .copyright {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media (min-width: 64rem) {
+    .sliding-banner {
+        height: auto;
+        z-index: 1;
+        display: flex;
+    }
+
+    .eshop {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 12rem;
+        margin: 0;
+        padding: 0.5rem 0;
+        position: absolute;
+        right: 15rem;
+    }
+
+    .eshop__list {
+        list-style: none;
+        padding: 0 0.3rem;
+    }
+
+    .eshop__list a {
+        text-decoration: none;
+        color: #828282;
+        font-size: 0.875rem;
+
+    }
+    
+    .sliding-banner__bag-empty {
+        position: absolute;
+        right: 1rem;
+        bottom: 0;
+    }
+
+    .main-header {
+        margin-top: 3rem;
+        border: none;
+        padding: 0;
+    }
+
+    .main-header__brand-button,
+    .main-header__nav {
+        width: 15%;
+        margin: 0 0 0 1rem;
+    }
+
+    .main-header__desktop-nav {
+        display: flex;
+        width: 65%;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .main-header__toggle-button,
+    .main-header__bag-empty {
+        visibility: hidden;
+    }
+
+    .main-header__search {
+        position: absolute;
+        right: 5rem;
+        top: 1.25rem;
+
+    }
+
+    .desktop-nav__list {
+        list-style: none;
+        padding: 0 0.3rem;
+    }
+
+    .desktop-nav__list a {
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .womens-pop,
+    .mens-pop,
+    .watches-pop,
+    .smartwatches-pop,
+    .bags-pop,
+    .wallets-pop,
+    .jewelry-pop,
+    .sale-pop,
+    .featured-pop {
+        width: 100%;
+        height: auto;
+        background: white;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+    }
+
+    .womens-pop__part5,
+    .womens-pop__part6,
+    .mens-pop__part5,
+    .watches-pop__part4,
+    .smartwatches-pop__part4,
+    .bags-pop__part3,
+    .wallets-pop__part3,
+    .jewelry-pop__part4,
+    .jewelry-pop__part5,
+    .sale-pop__part3,
+    .featured-pop__part3 {
+        text-align: center;
+    }
+
+    .womens-pop ul,
+    .mens-pop ul,
+    .watches-pop ul,
+    .smartwatches-pop ul,
+    .bags-pop ul,
+    .wallets-pop ul,
+    .jewelry-pop ul,
+    .sale-pop ul,
+    .featured-pop ul {
+        border-right: 1px solid #ccc;
+    }
+
+    .womens-pop ul,
+    .womens-pop__part5,
+    .womens-pop__part6  {
+        margin: 0;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mens-pop ul,
+    .jewelry-pop ul {
+        margin: 0;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mens-pop__part5,
+    .jewelry-pop__part4,
+    .jewelry-pop__part5 {
+        margin: 0;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .watches-pop ul,
+    .watches-pop__part4,
+    .smartwatches-pop ul,
+    .smartwatches-pop__part4 {
+        margin: 0;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bags-pop ul,
+    .bags-pop__part3,
+    .wallets-pop ul,
+    .wallets-pop__part3,
+    .sale-pop ul,
+    .sale-pop__part3,
+    .featured-pop ul,
+    .featured-pop__part3 {
+        margin: 0;
+        padding: 0 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .womens-pop__part5-container img,
+    .womens-pop__part6-container img,
+    .mens-pop__part5-container img,
+    .watches-pop__part4-container img,
+    .smartwatches-pop__part4-container img,
+    .bags-pop__part3-container img,
+    .wallets-pop__part3-container img,
+    .jewelry-pop__part4-container img,
+    .jewelry-pop__part5-container img,
+    .sale-pop__part3-container img,
+    .featured-pop__part3-container img {
+        width: auto;
+        height: 18rem;
+    }
+
+    .womens-pop__list-title,
+    .womens-pop__list,
+    .mens-pop__list-title,
+    .mens-pop__list,
+    .watches-pop__list-title,
+    .watches-pop__list,
+    .smartwatches-pop__list-title,
+    .smartwatches-pop__list,
+    .bags-pop__list-title,
+    .bags-pop__list,
+    .wallets-pop__list-title,
+    .wallets-pop__list,
+    .jewelry-pop__list-title,
+    .jewelry-pop__list,
+    .sale-pop__list-title,
+    .sale-pop__list,
+    .featured-pop__list-title,
+    .featured-pop__list   {
+        list-style: none;
+        display: block;
+        padding: 0.2rem;
+    }
+    
+    .womens-pop__list-title a,
+    .womens-pop__list a,
+    .mens-pop__list-title a,
+    .mens-pop__list a,
+    .watches-pop__list-title a,
+    .watches-pop__list a,
+    .smartwatches-pop__list-title a,
+    .smartwatches-pop__list a,
+    .bags-pop__list-title a,
+    .bags-pop__list a,
+    .wallets-pop__list-title a,
+    .wallets-pop__list a,
+    .jewelry-pop__list-title a,
+    .jewelry-pop__list a,
+    .sale-pop__list-title a,
+    .sale-pop__list a,
+    .featured-pop__list-title a,
+    .featured-pop__list a  {
+        text-decoration: none;
+        color: #2f2f2f;
+    }
+    
+    .womens-pop__list-title a,
+    .mens-pop__list-title a,
+    .watches-pop__list-title a,
+    .smartwatches-pop__list-title a,
+    .bags-pop__list-title a,
+    .wallets-pop__list-title a,
+    .jewelry-pop__list-title a,
+    .sale-pop__list-title a,
+    .featured-pop__list-title a {
+        font-weight: bold;
+    }
+    
+    .womens-pop__list-title:hover,
+    .womens-pop__list:hover,
+    .mens-pop__list-title:hover,
+    .mens-pop__list:hover,
+    .watches-pop__list-title:hover,
+    .watches-pop__list:hover,
+    .smartwatches-pop__list-title:hover,
+    .smartwatches-pop__list:hover,
+    .bags-pop__list-title:hover,
+    .bags-pop__list:hover,
+    .wallets-pop__list-title:hover,
+    .wallets-pop__list:hover,
+    .jewelry-pop__list-title:hover,
+    .jewelry-pop__list:hover,
+    .sale-pop__list-title:hover,
+    .sale-pop__list:hover,
+    .featured-pop__list-title:hover,
+    .featured-pop__list:hover     {
+        text-decoration: underline;
+    }
+
+    .bold {
+        color: #2f2f2f;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .bold:hover,
+    .bold:active {
+        text-decoration: underline;
+    }
+
+    .stay-connected {
+        width: 35%;
+    }
+
+    .discover,
+    .customer-care {
+        width: 20%;
+    }
+
+    .contact-us {
+        width: 15%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 90rem) {
+    .eshop {
+        flex-wrap: nowrap;
+        max-width: none;
+        right: 3rem;
+    } 
+
+    .sliding-banner__bag-empty {
+        top: 0;
+        padding: 0.5rem 0;
+    }
+
+    .main-header__search {
+        position: absolute;
+        right: 17rem;
+        top: 1.25rem;
+
+    }
+}
+
+@media (min-width: 160rem) {
+    .footer-container {
+        margin: 1rem 40rem;
+        padding: 0 1.5rem;
+    }
+
+    .copyright {
+        padding: 0 38rem;
+    }
+} 
