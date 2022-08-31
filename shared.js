@@ -1,3 +1,4 @@
+console.log('commit');
 var mainHeader = document.querySelector(".main-header");
 var womens = document.querySelector(".womens");
 var mens = document.querySelector(".mens");
